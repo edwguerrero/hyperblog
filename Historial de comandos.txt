@@ -1,0 +1,59 @@
+Historial de comandos
+    1  pwd
+    2  cd /
+    3  ls
+    4  ls -al
+    5  ls -l
+    6  clear
+    7  ls -al
+   15  cd /c
+   31  mkdir proyecto1
+   32  dir
+   33  ls
+   34  cd proyecto1/
+   37  touch vacio.txt
+   40  cat vacio.txt
+   42  history
+   44  rm vacio.txt
+   49  git init
+   51  ls -al
+   52  git status
+   53  git add historia.txt
+   54  git status
+   57  git rm --cached historia.txt
+   59  git add historia.txt
+   60  git status
+   66  git config --global user.name 'Edwin'
+   67  git config --global user.email 'davidguerrero.qs@gmail.com'
+   70  code historia.txt
+   92  git commit historia.txt -m 'se cmabio la dedad'
+   93  git log historia.txt
+  107  git show
+  108  git log
+  109  git add .
+  111  git commit historia.txt -m 'se agrego la estatura'
+  122  git diff  b79d24fcdffe9a18f243f6caf002635bd6f79f4b 39c580d2e63b51de14bec27ebbbf91552f675d94
+  124  git reset 39c580d2e63b51de14bec27ebbbf91552f675d94 --hard
+  136  git commit -m 'Arranco mi proyecto real con html y ccs'
+  git checkout master historia.txt
+
+------
+
+git log --oneline - Te muestra el id commit y el título del commit.
+git log --decorate- Te muestra donde se encuentra el head point en el log.
+git log --stat - Explica el número de líneas que se cambiaron brevemente.
+git log -p- Explica el número de líneas que se cambiaron y te muestra que se cambió en el contenido.
+git shortlog - Indica que commits ha realizado un usuario, mostrando el usuario y el titulo de sus commits.
+git log --graph --oneline --decorate y
+git log --pretty=format:"%cn hizo un commit %h el dia %cd" - Muestra mensajes personalizados de los commits.
+git log -3 - Limitamos el número de commits.
+git log --after=“2018-1-2” ,
+git log --after=“today” y
+git log --after=“2018-1-2” --before=“today” - Commits para localizar por fechas.
+git log --author=“Name Author” - Commits realizados por autor que cumplan exactamente con el nombre.
+git log --grep=“INVIE” - Busca los commits que cumplan tal cual está escrito entre las comillas.
+git log --grep=“INVIE” –i- Busca los commits que cumplan sin importar mayúsculas o minúsculas.
+git log – index.html- Busca los commits en un archivo en específico.
+git log -S “Por contenido”- Buscar los commits con el contenido dentro del archivo.
+git log > log.txt - guardar los logs en un archivo txt
+-----
